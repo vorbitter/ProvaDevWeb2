@@ -12,7 +12,7 @@ export default function Home() {
           <Link href="/itens/listar" className="text-blue-600 hover:underline">Listar Itens</Link>
         </li>
         <li>
-          <Link href="/comentarios/cadastrar/1" className="text-blue-600 hover:underline">Cadastrar Comentario</Link>
+          <Link href="/comentarios/cadastrar/" className="text-blue-600 hover:underline">Cadastrar Comentario</Link>
         </li>
         <li>
           <Link href="/comentarios/deletar/1" className="text-blue-600 hover:underline">Deletar Comentario</Link>
