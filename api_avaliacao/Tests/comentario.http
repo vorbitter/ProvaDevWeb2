@@ -1,0 +1,17 @@
+@url_base = http://localhost:5003/api/comentario
+### Cadastrar Comentario
+POST {{url_base}}/cadastrar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtQGFkbS5jb20iLCJleHAiOjE3NTAxMTg0OTl9.WLKGmQTyRDjvwVBFV3Y0mlVM-dZjBoXenInb_WO8WBg
+Content-Type: application/json
+
+{
+    "texto" : "Bebidas boas",
+    "itemId": 2
+}
+### Listar Comentarios de um Item
+GET {{url_base}}/listar/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtQGFkbS5jb20iLCJleHAiOjE3NTAxMjI2MTJ9.tcBi_zdHAJ7IcQawUioBvQVuCwi7ASp5yqCpGM8e59s
+
+### Deletar Comentario
+DELETE {{url_base}}/deletar/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtQGFkbS5jb20iLCJleHAiOjE3NTAxMjI2MTJ9.tcBi_zdHAJ7IcQawUioBvQVuCwi7ASp5yqCpGM8e59s

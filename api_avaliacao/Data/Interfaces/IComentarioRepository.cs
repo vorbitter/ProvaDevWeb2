@@ -11,5 +11,6 @@ namespace api_avaliacao.Data.Interfaces
         List<Comentario> Listar(int itemId);
         Comentario BuscarComentarioPorIdDoItem(int id);
         void Cadastrar(Comentario comentario);
+        void DeletarComentarioPorId(int comentarioId);
     }
 }

@@ -31,5 +31,11 @@ namespace api_avaliacao.Controllers
             _comentarioRepository.Cadastrar(comentario);
             return Created("", comentario);
         }
+        [HttpDelete("deletar/{comentarioId:int}")]
+        public async Task<IActionResult> DeletarComentario(int comentarioId)
+        {
+            _comentarioRepository.DeletarComentarioPorId(comentarioId);
+            return NoContent();
+        }
     }
 }

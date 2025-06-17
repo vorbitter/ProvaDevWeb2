@@ -12,6 +12,6 @@ namespace api_avaliacao.Models
         public int CategoriaId { get; set; }
         public Categoria? Categoria { get; set; }
         public DateTime CriadoEm { get; set; } = DateTime.Now;
-        public List<Comentario> Comentarios = new List<Comentario>();
+        public List<Comentario> Comentarios { get; set; } = new List<Comentario>();
     }
 }

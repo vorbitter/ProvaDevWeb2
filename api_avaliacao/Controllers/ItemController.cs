@@ -34,5 +34,4 @@ public class ItemController : ControllerBase
     {
         return Ok(_itemRepository.Listar());
     }
-
 }
